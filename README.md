@@ -4,28 +4,34 @@ CentOS to RHEL.
 
 #yum -y update
 #cat /etc/os-release
+
 ![image](https://github.com/user-attachments/assets/4d86da2c-6474-4a02-9f9d-c18e60872581)
 
 Install Convert2RHEL:
 Download the Red Hat GPG key:
 # curl -o /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release https://www.redhat.com/security/data/fd431d51.txt
+
 ![image](https://github.com/user-attachments/assets/6496fef9-1aa5-4c81-9e0b-2c890fc2fdf7)
 
 Install the Convert2RHEL repository file:
 #curl -o /etc/yum.repos.d/convert2rhel.repo https://ftp.redhat.com/redhat/convert2rhel/<version_number>/convert2rhel.repo
+
 ![image](https://github.com/user-attachments/assets/9d017ab3-0bf9-41d5-b746-d6aba0627573)
 
 Replace version_number with the appropriate major version of the OS, for example 7 or 8.
 Install the Convert2RHEL utility:
 # yum -y install convert2rhel
+
 ![image](https://github.com/user-attachments/assets/67a4055d-4369-423e-b4af-309576682299)
 
 #yum -y install subscription-manager
+
 ![image](https://github.com/user-attachments/assets/4c141d07-27ca-4d14-90fc-7dff6af75acb)
 
 #subscription-manager register
 Username:
 Password:
+
 ![image](https://github.com/user-attachments/assets/40ee59c2-47d4-4df6-aeae-beb0640b172a)
 
 #convert2rhel analyze
@@ -37,6 +43,7 @@ Note: There may be some issue, for eg: issues of kernel, services are running. D
 #convert2rhel
 or
 #convert2rhel -u username -p password
+
 ![image](https://github.com/user-attachments/assets/b2f6da70-5be1-4dca-aa6d-f86abd83b1a5)
 
 If no issues arise then it will convert CentOS into RHEL.
