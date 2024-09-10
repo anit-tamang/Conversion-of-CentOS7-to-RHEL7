@@ -44,6 +44,7 @@ If no issues arise then it will convert CentOS into RHEL.
 
 #reboot
 #cat /etc/os-release
+
 ![image](https://github.com/user-attachments/assets/de713e09-ab74-4f02-8919-631ee3394e49)
 
 Other Tips;
